@@ -12,6 +12,7 @@ And here is a plantuml diagram:
 
 ```uml
 @startuml
-A -right-> B -up-> C
-@stopuml
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+@enduml
 ```
