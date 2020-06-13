@@ -1,18 +1,30 @@
 # Pandoc Diagram Filter
 
+A pandoc filter that renders graphviz and plantuml diagrams in code blocks and
+embeds them through base64 encoding in HTML output.
+
+Not tested for other output formats.
+
 ## Installation
 
-```
-# clone this repo
-git clone https://github.com/zgulde/pandoc-diagram-filter.git
-# cd to the repo
-cd pandoc-diagram-filter
-# install the filter
-make install
-```
+1. Install `graphviz` and/or `plantuml` (depending on which you plan to use)
 
-Make sure you have `graphviz` and `plantuml` installed (you only have to have
-one or the other if you only plan to use one or the other).
+1. Install python3 and panflute
+
+    ```
+    python3 -m pip install panflute
+    ```
+
+1. Install this filter
+
+    ```
+    # clone this repo
+    git clone https://github.com/zgulde/pandoc-diagram-filter.git
+    # cd to the repo
+    cd pandoc-diagram-filter
+    # install the filter
+    make install
+    ```
 
 ## Usage
 
